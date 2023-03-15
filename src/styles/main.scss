@@ -1,0 +1,40 @@
+@use 'text';
+@use 'table';
+@use 'contador';
+@use 'variaveis';
+
+* {
+    padding: 0;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Roboto, sans-serif;
+    color: variaveis.$white;
+}
+
+body {
+    background-image: url("../image/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variaveis.$black;       
+        opacity: .7;
+        content: '';
+    }
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+
+

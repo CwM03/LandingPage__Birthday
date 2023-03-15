@@ -1,0 +1,27 @@
+@use 'variaveis';
+
+.table {
+    padding-top: 24px;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+
+        &__item {
+
+            input, button {
+                border: none;
+                border-radius: 5px;
+                color: variaveis.$black;
+                font-size: 14px;
+                padding: 12px 14px;
+                background-color: variaveis.$white;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}
